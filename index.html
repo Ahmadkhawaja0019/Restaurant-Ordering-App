@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Ahmad's Kitchen</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Sancreek&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class = "header-inner">
+                <img src = "burger.jpeg" alt = "a delicious beef burger">
+                <div class = "page-title">
+                    <h1>Ahmad's Kitchen</h1>
+                    <h3>The best burgers and pizzas in town.</h3>
+                </div>
+            </div>
+        </header>
+        <main>
+		    <h3>Pick something delicious from our menu!</h3>
+		    <div class="menu-container">
+			    <div class="menu-radios" id="menu-radios">
+                    
+                </div>
+		    </div>
+            <div class="order-section" id="order-section"></div>
+	    </main>
+        
+		<div class="payment-modal" id="payment-modal">
+            <h2>Enter card details</h2>
+			<form id="payment-form">
+				<input type="text" name="fullName" placeholder="Enter your name" required/>
+				<input type="text" inputmode="numeric" pattern="[0-9]{13,19}" maxlength="19" placeholder="Enter card number" name="cardNumber" required/>
+                <input type="text" inputmode="numeric" name="cvv" placeholder="CVV" maxlength="4"  required/>
+				<div class="modal-btn" id="modal-btn">
+					<button type="submit" class="pay-btn" id = "pay-btn">Pay</button>
+				</div>
+
+			</form>
+		</div>
+	<script src="script.js" type="module"></script>
+    </body>
+</html>
+
